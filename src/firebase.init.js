@@ -1,0 +1,18 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth"
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDZDWe-PkD-S7obl-5SX59eea2jyHWEEqE",
+    authDomain: "genius-car-service-6db31.firebaseapp.com",
+    projectId: "genius-car-service-6db31",
+    storageBucket: "genius-car-service-6db31.appspot.com",
+    messagingSenderId: "765790894636",
+    appId: "1:765790894636:web:969039aef2231dcd24af89"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+export default auth;
